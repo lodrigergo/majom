@@ -1,0 +1,260 @@
+/* default setting */
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #555;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+/**********************
+         HEADER
+***********************/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('./kep/star\ wars.webp');
+    /* 100vh = 100 viewheight, az elérhető képernyő teljes magassága */
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.row {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    margin-top: 0px;
+}
+
+.main-nav li {
+    margin-right: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.main-nav li a {
+    color: #fff;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    padding: 7px 0;
+    transition: 0.25s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e23;
+    transition: 0.25s;
+}
+
+/**********************
+        HERO-BOX
+***********************/
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 260%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 15px 30px;
+    border-radius: 200px;
+    transition: 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    /* 
+    BAL OLDALI GOMB, ALAPBOL SARGAN (#e67e23) KITOLTVE, SARGA BORDER ES FEHER SZOVEGGEL
+    */
+    color: #fff;
+    background-color: #e67e23;
+    border: 1px solid #e67e23;
+    margin-right: 15px;
+}
+
+.btn-empty:link,
+.btn-empty:visited {
+    /* 
+    JOBB OLDALI GOMB, ALAPBOL NINCS KITOLTVE, SARGA SZEGELLYEL ES SZOVEGGEL
+    */
+    color: #e67e23;
+    border: 1px solid #e67e23;
+}
+
+.btn:hover,
+.btn:active {
+    /* 
+    MINDKET GOMB, HATTERSZIN ES SZEGELY SZIN #fa7d19 
+    */
+    background-color: #fa7d19;
+    border: 1px solid #fa7d19;
+}
+
+.btn-empty:hover,
+.btn-empty:active {
+    /* 
+    JOBB OLDALI GOMB,FEHER SZOVEG
+    */
+    color: #fff;
+}
+
+/********************************
+   RESPONSIBILITY - media query
+*********************************/
+
+/* @media screen and (max-width: 685px) {
+    .hero-text-box {
+        font-size: 70%;
+    }
+
+    .main-nav {
+        font-size: 70%;
+    }
+} */
+
+/********************
+        ABOUT
+*********************/
+
+#about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(./about.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.about-box {
+    display: flex;
+    align-items: center;
+    margin: 35px auto 0 auto;
+    max-width: 768px;
+}
+
+.about-box img {
+    border-radius: 20px;
+    margin-right: 25px;
+    height: 300px;
+}
+
+.about-box p {
+    color: #fff;
+}
+
+section {
+    padding: 70px 0;
+}
+
+h2 {
+    text-align: center;
+    color: grey;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+h2::after {
+    content: ' ';
+    display: block;
+    background-color: rgb(230, 126, 35);
+    width: 130px;
+    height: 2px;
+    margin: 20px auto 0px;
+}
+
+/**********************
+        FEATURES
+***********************/
+
+#features h2 {
+    color: #555;
+}
+
+.features-welcome {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.feature-box {
+    padding: 0 30px;
+}
+
+.feature-container {
+    display: flex;
+}
+
+.feature-box span {
+    color: #e67e23;
+    font-size: 300%;
+    position: relative;
+    right: 8px;
+}
+
+.feature-title {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.feature-content {
+    text-align: justify;
+}
+
+.kepek {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.igazitas {
+    text-align: center;
+    justify-content: center;
+    
+}
+
+#fejcim {
+    margin-bottom: 100px;
+}
+
+.logo_alatti {
+    text-align: center;
+    justify-content: center;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.photo {
+    height: 100px;
+    width: 100px;
+}
+
+.text{
+    text-align: center;
+    justify-content: center;
+    font-weight:800;
+}
